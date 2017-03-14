@@ -1,3 +1,0 @@
-﻿Add-Migration "nome"
-Update-Database "nome(opcional)"
-Remove-Migration
