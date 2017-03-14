@@ -1,0 +1,21 @@
+﻿<template>
+    <iframe src="https://secure.na2.echosign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhBedF5PQnH9WJT5uOxUgfN7Z4-vmNHhJ8Oe4CBv-9v_71uOpBFpdCCS_PRmA7y9_wc*&hosted=false" width="100%" height="100%" frameborder="0" style="border: 0; overflow: hidden; min-height: 500px; min-width: 600px;"></iframe>
+    <div>
+        <div>
+            <input type="text" value.bind="token" placeholder="Token"/>
+        </div>
+
+        <button type="button" class="btn btn-danger" data-dismiss="modal" click.trigger="buscar()">Buscar</button>
+        
+        <table>
+            <tr>
+                <th repeat.for="titulo of titulos">${titulo}</th>
+            </tr>
+            <tr repeat.for="resposta of respostas">
+                <td repeat.for="item of resposta">${item}</td>
+            </tr>
+        </table>
+
+        <button type="button" class="btn btn-danger" data-dismiss="modal" click.trigger="buscar2()">Buscar</button>
+    </div>
+</template>
